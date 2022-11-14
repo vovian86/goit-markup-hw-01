@@ -32,7 +32,11 @@ body {
 .hero-btn:hover,
 .hero-btn:focus,
 .header .logo:hover,
-.header .logo:focus {
+.header .logo:focus,
+.projects-link.link:hover,
+.projects-link.link:focus,
+.projects-title:hover,
+.projects-title:focus {
   color: var(--accent-color);
 }
 
@@ -107,6 +111,7 @@ body {
   color: var(--secont-text-color);
 
   background-color: var(--accent-color);
+  border: none;
 }
 
 /* ------------ FEATURES ------------ */
@@ -175,7 +180,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--footer-link-color);
+  color: inherit;
 }
 
 .footer .logo {
@@ -196,6 +201,33 @@ body {
   color: var(--secont-text-color);
 }
 
+/* ------------ FILTERS ------------ */
+
+.filters-btn {
+  background-color: var(--secont-text-color);
+  border: none;
+  cursor: pointer;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  background-color: var(--accent-color);
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  color: var(--secont-text-color);
+}
+
 /* ------------ PROJECTS ------------ */
 
 .projects-title {
@@ -204,4 +236,8 @@ body {
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--main-title-color);
+}
+
+.projects-link.link {
+  color: inherit;
 }
