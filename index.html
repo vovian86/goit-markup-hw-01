@@ -10,50 +10,57 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="header">
-      <a href="" class="logo link"><span class="logo-span">Web</span>Studio</a>
-
-      <nav class="header-nav">
-        <ul class="header-list list">
-          <li class="header-item">
-            <a href="" class="header-link link">Студія</a>
-          </li>
-          <li class="header-item">
-            <a href="./portfolio.html" class="header-link link">Портфоліо</a>
-          </li>
-          <li class="header-item">
-            <a href="" class="header-link link">Контакти</a>
-          </li>
-        </ul>
-      </nav>
-
-      <section class="header-contacts">
-        <a href="mailto:info@devstudio.com" class="header-contacts-mail link"
-          >info@devstudio.com</a
+      <div class="container">
+        <a href="" class="logo link"
+          ><span class="logo-span">Web</span>Studio</a
         >
-        <a href="tel:+380961111111" class="header-contacts-tel link"
-          >+38 096 111 11 11</a
-        >
-      </section>
+
+        <nav class="header-nav">
+          <ul class="header-list list">
+            <li class="header-item">
+              <a href="" class="header-link link">Студія</a>
+            </li>
+            <li class="header-item">
+              <a href="./portfolio.html" class="header-link link">Портфоліо</a>
+            </li>
+            <li class="header-item">
+              <a href="" class="header-link link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <section class="header-contacts">
+          <a href="mailto:info@devstudio.com" class="header-contacts-mail link"
+            >info@devstudio.com</a
+          >
+          <a href="tel:+380961111111" class="header-contacts-tel link"
+            >+38 096 111 11 11</a
+          >
+        </section>
+      </div>
     </header>
 
     <main>
       <!-- HERO -->
 
-      <section class="hero">
+      <section class="section hero">
         <h1 class="hero-title">Ефективні рішення для вашого бізнесу</h1>
         <button type="button" class="hero-btn">Замовити послугу</button>
       </section>
 
       <!-- FEATURES -->
 
-      <section class="features">
+      <section class="section features">
         <h2 class="features-title visually-hidden">Переваги</h2>
         <ul class="features-list list">
           <li class="features-item">
@@ -88,7 +95,7 @@
 
       <!-- WORK -->
 
-      <section class="work">
+      <section class="section work">
         <h2 class="work-title">Чим ми займаємося</h2>
 
         <ul class="work-list list">
@@ -110,7 +117,7 @@
 
       <!-- TEAM -->
 
-      <section class="team">
+      <section class="section team">
         <h2 class="team-header">Наша команда</h2>
 
         <ul class="team-list list">

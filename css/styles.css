@@ -1,3 +1,7 @@
+html {
+  box-sizing: border-box;
+}
+
 :root {
   --main-title-color: #212121;
   --main-text-color: #757575;
@@ -12,6 +16,19 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
 }
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  outline: 2px solid tomato;
+}
+
+/* .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px dotted blue;
+} */
 
 .list {
   list-style: none;
@@ -100,11 +117,15 @@ body {
 }
 
 .hero-btn {
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 216px;
+
   cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
