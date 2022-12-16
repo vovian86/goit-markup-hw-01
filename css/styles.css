@@ -8,7 +8,9 @@ html {
   --accent-color: #2196f3;
   --secont-text-color: #ffffff;
   --main-logo-color: #000000;
-  --main-bg-color: #313131;
+  --main-bg-color: #e5e5e5;
+  --third-bg-color: #f5f4fa;
+  --second-bg-color: #2f303a;
   --footer-link-color: rgba(255, 255, 255, 0.6);
 }
 
@@ -16,19 +18,19 @@ body {
   font-family: "Roboto", sans-serif;
   color: var(--main-text-color);
 }
-
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  outline: 2px dotted blue;
+}
 .container {
+  margin-top: 0;
+  margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
   width: 1200px;
   outline: 2px solid tomato;
 }
-
-/* .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  outline: 2px dotted blue;
-} */
 
 .list {
   list-style: none;
@@ -103,10 +105,17 @@ body {
 /* ------------ HERO ------------ */
 
 .hero {
-  background-color: var(--main-bg-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+  text-align: center;
+  background-color: var(--second-bg-color);
 }
 
 .hero-title {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  max-width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -119,7 +128,7 @@ body {
 .hero-btn {
   border-radius: 4px;
   padding: 10px 32px;
-  min-width: 216px;
+  min-width: 200px;
 
   cursor: pointer;
   font-weight: 700;
@@ -137,7 +146,12 @@ body {
 
 /* ------------ FEATURES ------------ */
 
+.features {
+  padding-bottom: 47px;
+}
+
 .features-item-title {
+  margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -147,12 +161,17 @@ body {
 }
 
 .features-item-text {
+  margin-top: 0;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
 /* ------------ WORK ------------ */
+
+.work {
+  padding-top: 47px;
+}
 
 .work-title {
   font-weight: 700;
@@ -165,6 +184,9 @@ body {
 
 /* ------------ TEAM ------------ */
 
+.team {
+  background-color: var(--third-bg-color);
+}
 .team-header {
   font-weight: 700;
   font-size: 36px;
@@ -193,7 +215,7 @@ body {
 /* ------------ FOOTER ------------ */
 
 .footer {
-  background-color: var(--main-bg-color);
+  background-color: var(--second-bg-color);
 }
 
 .footer .link {
